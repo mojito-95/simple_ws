@@ -1,6 +1,19 @@
 Mojito = Mojito || {}
 Mojito.WS = Mojito.WS || {}
 
+timer.Simple(2, function()
+
+	surface.CreateFont("Mojito.WS.Font", {
+		font = Mojito.WS.FontName,
+		size = ScrW() * (Mojito.WS.FontSize / 1000),
+		weight = 300,
+		antialias = true,
+		shadow = false,
+		extended = true,
+	})
+
+end)
+
 local weaponSelectorIndex = 1
 local weaponSelectorDeltaIndex = 1
 local weaponSelectorInfoAlpha = 0
